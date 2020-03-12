@@ -1,8 +1,9 @@
-uuid: c2b458a9-bf06-46fa-9f34-4680034320a3
+uuid: c9e7ae25-61c4-4de0-b599-ce5d982f9064
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.hero_header
     - field.field.node.frontpage.field_content_body
     - field.field.node.frontpage.field_hero_image
     - field.field.node.frontpage.field_metadata
@@ -11,26 +12,25 @@ dependencies:
     - field.field.node.frontpage.field_teaser_text
     - node.type.frontpage
   module:
-    - entity_reference_revisions
     - user
 _core:
   default_config_hash: '-dTbOfljyuYfgcn7hK8miRbYRNWhQdHKcDEMdnYNjEg'
-id: node.frontpage.default
+id: node.frontpage.hero_header
 targetEntityType: node
 bundle: frontpage
-mode: default
+mode: hero_header
 content:
-  field_content_body:
+  field_hero_image:
     weight: 0
     label: hidden
     settings:
       view_mode: default
-      link: ''
+      link: false
     third_party_settings: {  }
-    type: entity_reference_revisions_entity_view
+    type: entity_reference_entity_view
     region: content
 hidden:
-  field_hero_image: true
+  field_content_body: true
   field_metadata: true
   field_seo_title: true
   field_teaser_media: true
