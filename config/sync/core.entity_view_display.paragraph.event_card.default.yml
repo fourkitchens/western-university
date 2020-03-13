@@ -23,8 +23,8 @@ content:
     weight: 4
     label: hidden
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: html_datetime
     third_party_settings: {  }
     type: datetime_default
     region: content
@@ -41,8 +41,9 @@ content:
     label: hidden
     settings:
       link: true
+      view_mode: default
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   field_link:
     weight: 5
