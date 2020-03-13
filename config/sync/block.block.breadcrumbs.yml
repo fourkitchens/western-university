@@ -1,30 +1,28 @@
-uuid: 536eacf3-1590-4f4f-8475-4e7e42c35238
+uuid: e2c615bb-459c-416d-a22e-9a456645664d
 langcode: en
 status: true
 dependencies:
   module:
     - ctools
+    - system
   theme:
     - western_up
-id: frontpage_hero__header
+id: breadcrumbs
 theme: western_up
 region: page_title
 weight: 0
 provider: null
-plugin: 'entity_view:node'
+plugin: system_breadcrumb_block
 settings:
-  id: 'entity_view:node'
-  label: 'Frontpage Hero - Header'
-  provider: ctools
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
   label_display: '0'
-  view_mode: hero_header
-  context_mapping:
-    entity: '@node.node_route_context:node'
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
       frontpage: frontpage
-    negate: false
+    negate: true
     context_mapping:
       node: '@node.node_route_context:node'
