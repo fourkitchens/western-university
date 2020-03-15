@@ -8,10 +8,10 @@ This project utilizes Yarn Workspaces in order to facilitate active development 
 
 ## Quick setup
 
-- `git clone git@github.com:emulsify-ds/western-up.git && cd western-up`<br >
-  (Clones the repo, and moves into it's directory.)
+- `cd web/themes/custom/western-up`<br >
+  (Moves into the theme directory.)
 - `yarn setup`<br >
-  (Installs all dependencies, clones the twig and styles repos, and sets up yarn workspaces to enable easy local development.)
+  (Clones the twig and styles repos, installs all dependencies, and sets up yarn workspaces to enable easy local development.)
 - `yarn develop`<br >
   (Starts the watch process, as well as Storybook where you can see your changes live in the browser.)
 
