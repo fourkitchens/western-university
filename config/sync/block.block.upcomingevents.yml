@@ -6,6 +6,7 @@ dependencies:
     - 'block_content:content_block:62490223-c71d-40c8-87c3-b1f3e0d46158'
   module:
     - block_content
+    - ctools
   theme:
     - western_up
 id: upcomingevents
@@ -22,4 +23,11 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      frontpage: frontpage
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
