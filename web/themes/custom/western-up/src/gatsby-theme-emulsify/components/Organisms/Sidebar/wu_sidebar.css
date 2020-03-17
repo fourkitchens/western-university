@@ -1,0 +1,11 @@
+.sidebar__heading {
+  background: url('./logo.png') no-repeat scroll 0 0;
+  background-size: contain;
+  height: 0;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+.parent-menu__toggle {
+  display: none;
+}

@@ -3,7 +3,11 @@ import merge from "lodash.merge";
 
 export default merge({}, emulsifyTheme, {
   // Custom items here
-  // colors: {
-  //   text: "#6f6f6f",
-  // },
+  colors: {
+    background: "#F7FAF9",
+    text: "#2F495C",
+    primary: "#003594",
+    muted: "#DAE2E2",
+    highlight: "#2F495C"
+  },
 })

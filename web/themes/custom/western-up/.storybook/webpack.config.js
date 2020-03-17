@@ -4,6 +4,7 @@ const _StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = async ({ config }) => {
 
+  config.resolve = { symlinks: false }
   config.watchOptions = {
     ignored: [
       /node_modules\/(?!(western-up-scss|western-up-twig)\/)/,
