@@ -72,7 +72,12 @@ class Sidebar extends Component {
               }
         }
       >
-        <div className="sidebar__inner">
+        <div
+          className="sidebar__inner"
+          sx={{
+            fontFamily: "heading"
+          }}
+        >
           <div
             className="sidebar__header"
             sx={{
@@ -125,7 +130,8 @@ class Sidebar extends Component {
               "& .main-menu > .menu-item": {
                 border: "none",
                 px: 6,
-                py: 2
+                py: 2,
+                textTransform: "uppercase"
               },
               ".menu-icon": {
                 fill: "primary",
@@ -137,7 +143,11 @@ class Sidebar extends Component {
               ".main-menu > .menu-item--open": {
                 backgroundColor: "background",
                 borderLeft: "6px solid",
-                pb: 4
+                pb: 4,
+                "& > span": {
+                  display: "block",
+                  mb: 2
+                }
               },
               ".menu-item--open .menu-icon--up": {
                 display: "inline-block"
@@ -146,7 +156,11 @@ class Sidebar extends Component {
                 margin: 0,
               },
               ".menu-link": {
-                color: "primary"
+                color: "primary",
+                fontSize: 1,
+                fontWeight: "600",
+                textDecoration: "none",
+                textTransform: "none"
               }
             }}
           >
@@ -162,6 +176,7 @@ class Sidebar extends Component {
             sx={{
               fontSize: "0.65rem",
               py: 3,
+              mx: 4,
               borderTop: [null, null, "1px solid rgba(255, 255, 255, 0.4)"]
             }}
           >

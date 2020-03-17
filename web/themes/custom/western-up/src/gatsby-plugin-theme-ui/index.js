@@ -10,4 +10,8 @@ export default merge({}, emulsifyTheme, {
     muted: "#DAE2E2",
     highlight: "#2F495C"
   },
+  fonts: {
+    body: "'PT Serif', serif",
+    heading: "'Inter', sans-serif",
+  }
 })
