@@ -61,7 +61,7 @@
     "webpack-cli": "^3.3.6",
     "webpack-merge": "^4.2.2",
     "western-up-scss": "^0.0.30",
-    "western-up-twig": "^0.0.37"
+    "western-up-twig": "^0.0.40"
   },
   "resolutions": {
     "**/twig": "~1.13.3"
