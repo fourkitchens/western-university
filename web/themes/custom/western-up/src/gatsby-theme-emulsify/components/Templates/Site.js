@@ -52,7 +52,17 @@ export default ({
         <Flex
           className="main-content"
           sx={{
-            flexBasis: [null, "80%", null]
+            flexBasis: [null, "80%", null],
+            ".tabs": {
+              backgroundColor: "highlight"
+            },
+            ".tabs a:hover": {
+              color: "highlight"
+            },
+            ".active": {
+              backgroundColor: "background",
+              color: "highlight"
+            }
           }}
         >
           <button
@@ -107,7 +117,10 @@ export default ({
               px: [4, null, 16],
               py: 12,
               "& h1": {
-                fontSize: 6
+                fontSize: 8
+              },
+              "img": {
+                mb: 6
               }
             }}
           >

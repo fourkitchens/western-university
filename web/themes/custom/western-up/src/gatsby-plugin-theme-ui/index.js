@@ -8,7 +8,8 @@ export default merge({}, emulsifyTheme, {
     text: "#2F495C",
     primary: "#003594",
     muted: "#DAE2E2",
-    highlight: "#2F495C"
+    highlight: "#2F495C",
+    accent: "#AAB1B1"
   },
   fonts: {
     body: "'PT Serif', serif",
@@ -16,7 +17,24 @@ export default merge({}, emulsifyTheme, {
   },
   styles: {
     root: {
+      fontSize: 3
+    },
+    h2: {
       fontSize: 5
+    },
+    h3: {
+      color: "accent",
+      fontSize: 3,
+      textTransform: "uppercase"
+    },
+    h4: {
+      color: "accent",
+      fontSize: 2,
+      textTransform: "uppercase"
+    },
+    h5: {
+      fontSize: 1,
+      textTransform: "uppercase"
     }
   }
 })
