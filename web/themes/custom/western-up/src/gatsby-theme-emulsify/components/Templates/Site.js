@@ -121,6 +121,10 @@ export default ({
               },
               "img": {
                 mb: 6
+              },
+              "iframe": {
+                borderColor: "muted",
+                padding: 4,
               }
             }}
           >
