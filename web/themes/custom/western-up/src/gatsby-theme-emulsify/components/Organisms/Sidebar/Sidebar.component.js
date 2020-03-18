@@ -145,6 +145,7 @@ class Sidebar extends Component {
                 borderLeft: "6px solid",
                 pb: 4,
                 "& > span": {
+                  color: colorMode === "dark" ? "text" : "primary",
                   display: "block",
                   mb: 2
                 }
@@ -177,7 +178,7 @@ class Sidebar extends Component {
               fontSize: "0.65rem",
               py: 3,
               mx: 4,
-              borderTop: [null, null, "1px solid rgba(255, 255, 255, 0.4)"]
+              borderTop: theme => [null, null, `1px solid ${theme.colors.background}`]
             }}
           >
             Design System Powered by{" "}
@@ -186,7 +187,7 @@ class Sidebar extends Component {
               target="_blank"
               rel="noopener noreferrer"
               sx={{
-                color: "background"
+                color: "primary"
               }}
             >
               <strong>Emulsify</strong>

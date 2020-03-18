@@ -61,14 +61,23 @@ export default ({
             }}
             sx={{
               cursor: "pointer",
+              color: colorMode === "dark" ? "text" : "background",
               display: "block",
+              fontWeight: 700,
               position: "fixed",
               top: 4,
               right: 4,
+              backgroundColor: colorMode === "dark" ? "background" : "primary",
               border: "none",
               borderRadius: "2px",
-              padding: 2,
-              fontSize: 0
+              py: 2,
+              px: 3,
+              fontSize: 1,
+              zIndex: 10,
+              "&:hover": {
+                backgroundColor: "background",
+                color: "primary"
+              }
             }}
           >
             {colorMode === "default" ? "Dark" : "Light"}
@@ -79,7 +88,7 @@ export default ({
               background: theme =>
                 `linear-gradient(90deg, ${theme.colors.primary} 20px, transparent 1%) center, linear-gradient(${theme.colors.primary} 20px, transparent 1%) center, ${theme.colors.muted}`,
               backgroundSize: "22px 22px",
-              color: "background",
+              color: colorMode === "dark" ? "text" : "background",
               fontSize: "4rem",
               lineHeight: "1.2",
               mb: 0,
