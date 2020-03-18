@@ -70,7 +70,7 @@
     "setup": "git clone git@github.com:emulsify-ds/western-up-twig.git && git clone git@github.com:emulsify-ds/western-up-scss.git && yarn",
     "styleguide": "npm run build-storybook && gatsby develop",
     "build-styleguide": "npm run build-storybook && gatsby build",
-    "deploy-styleguide": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy-styleguide": "npm run build-storybook && gatsby build --prefix-paths && gh-pages -d public",
     "lint": "eslint ./components",
     "storybook": "start-storybook -s ./dist,./western-up-twig/images -p 6006",
     "build-storybook": "build-storybook -s ./dist,./western-up-twig/images -o static/.out",
