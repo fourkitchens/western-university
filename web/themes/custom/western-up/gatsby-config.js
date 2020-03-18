@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/western-university",
   plugins: [
     {
       resolve: 'gatsby-theme-emulsify',

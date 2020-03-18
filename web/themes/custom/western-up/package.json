@@ -37,7 +37,7 @@
     "file-loader": "^4.2.0",
     "fs": "^0.0.1-security",
     "gatsby": "^2.19.7",
-    "gatsby-theme-emulsify": "^1.0.0-alpha.13",
+    "gatsby-theme-emulsify": "^1.0.0-alpha.14",
     "glob": "^7.1.4",
     "imagemin-webpack-plugin": "^2.4.2",
     "js-yaml-loader": "^1.2.2",
