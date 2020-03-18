@@ -125,6 +125,13 @@ export default ({
               "iframe": {
                 borderColor: "muted",
                 padding: 4,
+              },
+              "table, td, tr, thead, th": {
+                border: "none",
+                verticalAlign: "top"
+              },
+              "th": {
+                textAlign: "center"
               }
             }}
           >

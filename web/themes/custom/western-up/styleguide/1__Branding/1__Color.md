@@ -14,18 +14,15 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 ### Branding Palette Tints & Shades 
 
-<div style="display: flex">
-  <img src="/colors.png" width="400" style="margin-right: 1rem" />
-  <img src="/colors-light.png" width="400" />
-</div>
+Primary Regular             |  Primary Transparent
+:-------------------------:|:-------------------------:
+![Colors](./colors.png)  |  ![Colors Light](./colors-light.png)
 
 </DarkWrapper>
 
 ## Grayscale Palette Solids, Tints & Shades
 
-<div style="display: flex">
-  <img src="/colors-gray.png" width="400" style="margin-right: 1rem" />
-  <img src="/colors-gray-light.png" width="400" />
-</div>
-
+Colors Gray Normal            |  Colors Gray Light
+:-------------------------:|:-------------------------:
+![Colors Gray](./colors-gray.png)  |  ![Colors Gray Light](./colors-gray-light.png)
 
