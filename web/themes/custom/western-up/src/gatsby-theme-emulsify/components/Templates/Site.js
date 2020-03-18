@@ -81,6 +81,7 @@ export default ({
               backgroundSize: "22px 22px",
               color: "background",
               fontSize: "4rem",
+              lineHeight: "1.2",
               mb: 0,
               marginTop: 0,
               px: [4, null, 16],

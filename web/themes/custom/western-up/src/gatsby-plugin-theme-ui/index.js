@@ -13,5 +13,10 @@ export default merge({}, emulsifyTheme, {
   fonts: {
     body: "'PT Serif', serif",
     heading: "'Inter', sans-serif",
+  },
+  styles: {
+    root: {
+      fontSize: 5
+    }
   }
 })

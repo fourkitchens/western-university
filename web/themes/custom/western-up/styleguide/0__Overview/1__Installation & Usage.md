@@ -1,6 +1,6 @@
 ---
-title: "Whatever"
-description: "How to install and use Emulsify Gatsby Starter Drupal edition"
+title: "Installation & Usage"
+description: "How to install and use WUP Design System"
 publishToStyleGuide: true
 ---
 
