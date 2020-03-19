@@ -44,9 +44,6 @@ regions:
 # `$sourceDir` = defined in `pattern-lab/config/config.yml` under `sourceDir
 # patterns folder = `$sourceDir` + `_patterns/`
 component-libraries:
-  base:
-    paths:
-      - node_modules/western-up-twig/00-base
   atoms:
     paths:
       - node_modules/western-up-twig/01-atoms
