@@ -59,6 +59,3 @@ component-libraries:
   templates:
     paths:
       - node_modules/western-up-twig/04-templates
-  pages:
-    paths:
-      - node_modules/western-up-twig/05-pages
