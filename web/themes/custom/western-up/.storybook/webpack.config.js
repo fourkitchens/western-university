@@ -3,16 +3,17 @@ const globImporter = require('node-sass-glob-importer');
 const _StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = async ({ config }) => {
-
-  config.resolve = { symlinks: false }
+  config.resolve = { symlinks: false };
   config.watchOptions = {
     ignored: [
-      /node_modules\/(?!(western-up-scss|western-up-twig)\/)/,
-      /\(?!(western-up-scss|western-up-twig)([\\]+|\/)node_modules/
-    ]
-  }
+      /node_modules\/(?!(western-up-scss|western-up-twig|western-up-react)\/)/,
+      /\(?!(western-up-scss|western-up-twig|western-up-react)([\\]+|\/)node_modules/,
+    ],
+  };
   // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
-  config.module.rules[0].exclude = [/node_modules\/(?!(gatsby|western-up-twig)\/)/];
+  config.module.rules[0].exclude = [
+    /node_modules\/(?!(gatsby|western-up-twig|western-up-react)\/)/,
+  ];
 
   // use installed babel-loader which is v8.0-beta (which is meant to work with @babel/core@7)
   config.module.rules[0].use[0].loader = require.resolve('babel-loader');
@@ -42,7 +43,11 @@ module.exports = async ({ config }) => {
         options: {
           twigOptions: {
             namespaces: {
-              atoms: path.resolve(__dirname, '../node_modules/', 'western-up-twig/01-atoms'),
+              atoms: path.resolve(
+                __dirname,
+                '../node_modules/',
+                'western-up-twig/01-atoms',
+              ),
               molecules: path.resolve(
                 __dirname,
                 '../node_modules/',
