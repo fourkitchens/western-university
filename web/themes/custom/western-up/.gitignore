@@ -25,4 +25,5 @@ composer.lock
 
 # Yarn Workspace Directories
 western-up-twig
+western-up-react
 western-up-scss
